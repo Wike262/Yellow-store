@@ -37,7 +37,7 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  right: 10px;
+  right: 30px;
 }
 
 .slider ol li {
@@ -134,6 +134,7 @@
   margin-right: 10px;
   width: 50px;
   height: 40px;
+  object-fit: contain;
 }
 
 .advanteges .item h4 {
@@ -466,21 +467,26 @@
 
 .catalog_items .buy button {
   cursor: pointer;
+  display: flex;
+  align-items: center;
   padding: 10px 20px;
   font-weight: bold;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   border: none;
   background: #ffc501;
+}.catalog_items .buy button i {
+  font-size: 20px;
+  color: #000000;
+  margin-right: 10px;
+}
+.catalog_items .buy button:hover {
+  background: #e2b724;
+  color: #ffffff;
+}.catalog_items .buy button:hover i{
+  color: #ffffff
 }
 
-.catalog_items .buy button img {
-  margin: 0;
-  margin-left: -5px;
-  margin-right: 10px;
-  height: 20px;
-  width: 20px;
-}
 
 .catalog_items .buy a {
   color: #313131;
@@ -662,9 +668,13 @@
 
   .catalog_items .item .des h4 {
     height: 70px;
-
+    color: #000000;
+    text-decoration: none
   }
-
+  .catalog_items .item .des a:hover {
+    color: #000000;
+    text-decoration: none
+  }
   .catalog_items .cena .cen h3,
   .catalog_items .cena .cen p,
   .catalog_items .cena span strong,

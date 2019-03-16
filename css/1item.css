@@ -79,6 +79,7 @@
 
 .item h3 {
     font-size: 18px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
@@ -86,6 +87,7 @@
 .item .mod .colo {
     display: flex;
     align-items: center;
+    margin: 10px 0;
 }
 
 .item .cena .value {
@@ -97,6 +99,7 @@
     margin: 0;
     margin-right: 40%;
     font-size: 26px;
+    color: #d7d9dd;
     text-decoration-line: line-through;
 }
 
@@ -119,6 +122,7 @@
 
 .item .mod .pam p,
 .item .mod .colo p {
+    width: 50px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
@@ -130,11 +134,15 @@
 }
 
 .item ul span {
-    color: #000000
+    color: #313130
 }
-
+.item .description .cont {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
 .item .cena {
-    border-top: 1px solid;
+    border-top: 1px solid #d7d9dd;
+    padding-top: 30px;
 }
 
 .item .buttons {
@@ -159,7 +167,18 @@
     border-radius: 40px;
     border: none;
     background: #ffc501;
-}
+}.item .buttons  button i {
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+  }
+  .item .buttons  button:hover {
+    background: #e2b724;
+    color: #ffffff;
+  }.item .buttons  button:hover i{
+    color: #ffffff
+  }
+  
 
 .item .buttons button img {
     margin: 0;
@@ -203,13 +222,13 @@
 
 .carousel-control-prev {
     left: -15px;
-    bottom: 70px;
+    bottom: 60px;
     top: auto;
 }
 
 .carousel-control-next {
-    left: -15px;
-    top: 70px;
+    left: -17px;
+    top: 60px;
     bottom: auto;
 }
 
@@ -275,9 +294,11 @@
 }
 
 #panel1 table tr {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #eae9e9;
 }
-
+#panel2 {
+    margin: 20px;
+}
 #panel1 table td {
     padding: 10px 0;
 
@@ -296,6 +317,8 @@
 
 .catalog_items {
     margin: 0;
+    margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 .catalog_items .title a:hover {
@@ -401,11 +424,13 @@
 }
 
 .catalog_items .item .des h4 {
+    color: #000000;
+    text-decoration: none;
     height: 50px;
     font-size: 16px;
     font-weight: bold;
 }
-
+.catalog_items .item .des a:hover{text-decoration: none;}
 .catalog_items .item .buttons {
     margin: 10px 0;
     width: 100%;
@@ -525,7 +550,7 @@
 
 .catalog_items .cena p {
     text-decoration: none;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .catalog_items .cena img {
@@ -559,7 +584,6 @@
 .catalog_items .cena .compare img {
     margin-bottom: 10px;
 }
-
 .catalog_items .buy {
     margin-top: 20px;
     display: -webkit-box;
@@ -575,17 +599,6 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.catalog_items .buy button {
-    display: flex;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-weight: bold;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-    border: none;
-    background: #ffc501;
 }
 
 .catalog_items .buy button img {
@@ -610,33 +623,18 @@
         max-width: 960px !important;
     }
 
-    .slider ol {
-        flex-direction: row;
-        bottom: -80px;
-        top: auto;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
 
     .carousel-inner {
-        margin: 0 !important;
+        margin-left: 70px !important;
     }
 
-    .carousel-control-prev {
-        bottom: -40px;
-        left: 30px;
-        transform: rotate(90deg)
+    .carousel-item img, .carousel-item .active, .carousel-inner {
+        max-width: 350px;
     }
 
-    .carousel-control-next {
-        bottom: -40px;
-        right: 30px;
-        left: auto;
-        top: auto;
-        transform: rotate(90deg)
+    .item .cena p {
+        margin-right: 0;
     }
-
     #panel1 table td:nth-child(2) {
         width: 45%;
     }
@@ -646,9 +644,13 @@
     #slider {
         max-width: 1250px !important;
     }
+    .carousel-item img, .carousel-item .active, .carousel-inner {
+        max-width: 450px;
+    }
 
-
-
+    .item .cena p {
+        margin-right: 40%;
+    }
 
 }
 

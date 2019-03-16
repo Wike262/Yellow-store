@@ -15,10 +15,12 @@
 
 .all {
     display: flex;
+    align-items: center;
 }
 
 .all p {
     margin-right: 10px;
+    margin-bottom: 0;
 }
 
 .dropdown-el {
@@ -43,9 +45,15 @@
     display: none;
 
 }
-
+.nice-select .option {
+    background: #f0efef;
+    display: flex;
+    justify-content: center;
+}
 .nice-select {
+    background: #f0efef;
     border-radius: 30px;
+    border: none
 }
 
 .dropdown-el label {
@@ -103,16 +111,29 @@
 }
 
 .menu .item input[type="checkbox"]+label:before {
-    width: 10px;
+    width: 11px;
     height: 5px;
     margin-right: 5px;
-    padding: 0 10px;
+    padding: 5px 10px;
     content: '';
     border-radius: 5px;
     border: 2px solid #c9cacb;
     background: #ffffff;
 }
-
+.catalog_items .title + button {
+    margin: 0 17px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px
+}.catalog_items .title + button img {
+    margin-left: 10px;
+    height: 10px;
+    width: 15px;
+}
+#filter{
+    transition: none;
+}
 .rs-container .rs-scale span ins {
     display: none;
 }
@@ -131,10 +152,12 @@
 .cont {
     transition: none;
 }
-
+.menu:nth-child(3) {
+    background: #efeeee;
+}
 .menu input[type="checkbox"]:checked+label::before {
     content: '\2713';
-    padding: 0 5px;
+    padding: 5px 5.8px;
 }
 
 .menu input[type="text"] {
@@ -197,7 +220,8 @@
     background: #313131;
     color: #ffffff;
     border: none;
-    padding: 10px 40px;
+    font-weight: bold;
+    padding: 10px 100px;
     border-radius: 30px;
 }
 

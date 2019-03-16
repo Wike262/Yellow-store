@@ -12,7 +12,9 @@
 .basket {
     margin-top: 40px;
 }
-
+.nice-select span {
+    justify-content: start !important
+}
 .basket h2,
 .order h2 {
     text-transform: uppercase;
@@ -85,6 +87,7 @@ table .count button {
 
 table .count button:nth-child(1) {
     border-radius: 10px 0 0 10px;
+    margin-right: -5px;
 }
 
 table .count span {
@@ -92,13 +95,15 @@ table .count span {
     font-weight: bold;
     font-size: 26px;
     color: #000000;
-    border: none;
+    border: 1px solid #c2c9cb;
     padding: 0 10px;
     border-radius: 10px;
+    z-index: 100;
 }
 
 table .count button:nth-child(3) {
     border-radius: 0 10px 10px 0;
+    margin-left: -5px;
 }
 
 table .cena,
@@ -233,10 +238,13 @@ input {
     font-size: 20px;
 }
 
+.item:nth-child(4) .content{
+    justify-content: start !important;
+}
 .item .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+justify-content: space-between;
 }
 
 .order .item .chek label:before {

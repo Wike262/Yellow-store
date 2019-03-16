@@ -19,9 +19,9 @@
 	<header>
 		<div class="container">
 			<div class="row justify-content-between py-3 align-items-center">
-				<div class="social col-lg-4 col-xl-3 col-md-2 col-5">
+				<div class="social col-lg-4 col-xl-3 col-md-2 col-4 d-none d-md-flex">
 					<p class="d-none d-lg-block">Добавляйтесь к нам</p>
-					<div class="icons d-flex justify-content-between d-md-block">
+					<div class="icons d-flex justify-content-between d-md-block align-items-start">
 						<a href="#"><img src="img/tw.png" alt="icon_social"></a>
 						<a href="#"><img src="img/vk.png" alt="icon_social"></a>
 						<a href="#"><img src="img/f.png" alt="icon_social"></a>
@@ -29,14 +29,48 @@
 						<a href="#"><img src="img/od.png" alt="icon_social"></a>
 					</div>
 				</div>
-				<div class="navigation col-lg-7 col-xl-6 col-md-9 col-5 order-lg-0 order-first d-flex justify-content-md-center justify-content-lg-start justify-content-start">
+				<div class="basket col-2 d-flex d-md-none align-items-start pt-2 order-last">
+					<div class="bask">
+						<a href="bascket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="contact d-md-none d-block col-6 order-2 ">
+					<h3>+7 (800) 920-85-95</h3>
+				</div>
+				<div
+					class="navigation col-lg-8 col-xl-9 col-md-10 col-2 order-lg-0 order-first d-flex justify-content-start justify-content-md-end">
 					<nav class="navbar navbar-expand-md">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-						 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<button class="navbar-toggler" onclick="toogle();">
 							<i class="fa fa-bars" aria-hidden="true"></i>
 						</button>
-
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div id="menu-dropdown">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item ">
+									<i class="fa fa-search" aria-hidden="true"></i>
+									<input type="text" placeholder="Поиск по каталогу">
+								</li>
+								<li class="nav-item d-flex">
+									<img src="img/callback1.png" alt="callback1"> <a class="nav-link" href="#">Обратный
+										звонок</a>
+								</li>
+								<li class="nav-item ">
+									<a class="nav-link" href="#">О магазине</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="shiping.html">Доставка и оплата</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#">Вопросы и ответы</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="#">Сервис</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="contact.html">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="collapse navbar-collapse d-none d-md-block" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li class="nav-item active">
 									<a class="nav-link" href="#">О магазине</a>
@@ -58,10 +92,6 @@
 					</nav>
 
 				</div>
-				<div class="login col-xl-2 col-md-1 col-2 ">
-					<img src="img/user.png" alt="login_icon">
-					<button class="d-none d-xl-inline-block">Личный кабинет</button>
-				</div>
 			</div>
 			<div class="row">
 				<div class="logotype col-lg-3 col-12 d-flex justify-content-center">
@@ -72,49 +102,26 @@
 							<p>интернет-магазин продукции Apple</p>
 						</div>
 					</a>
-
 				</div>
-				<div class="buttons  col-lg-5 col-12 col-md-6 align-items-center justify-content-center justify-content-md-between align-items-md-start flex-row flex-md-column flex-lg-row">
+				<div
+					class="buttons d-none d-md-flex  col-lg-5 col-12 col-md-6 align-items-center justify-content-center justify-content-md-between align-items-md-start flex-row flex-md-column flex-lg-row">
 					<div class="search">
-						<input type="text" placeholder="Поиск по каталогу" id="search"><label for="search"> <img src="img/search.png" alt=""></label>
+						<input type="text" placeholder="Поиск по каталогу" id="search"><label for="search"> <img
+								src="img/search.png" alt=""></label>
 					</div>
 					<div class="callback">
 						<img src="img/callback.png" alt="">
 						<button>Обратный звонок</button>
 					</div>
 				</div>
-				<div class="contact col-lg-2 col-12 col-md-6 ">
-					<p>Заявки принимаются 24/7</p>
+				<div class="contact d-none d-md-flex col-lg-2 col-12 col-md-6 align-items-center">
 					<h3>+7 (800) 920-85-95</h3>
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Еще контакты</a>
-					<div class="dropdown-menu">
-						<div class="contact">
-							<p>Контактная Информация</p>
-							<div class="tel">
-								<img src="img/mts.jpg" alt="mts_icon">
-								<p>+7 (812) <span>920-84-51</span></p>
-							</div>
-							<div class="tel">
-								<img src="img/megafon.jpg" alt="megafon_icon">
-								<p>+7 (812) <span>920-84-51</span></p>
-							</div>
-							<h4>Работаем круглосуточно</h4>
-							<div class="online">
-								<p></p>
-								<div class="web"><img src="img/viber.jpg" alt="viber_icon"><a href="#">yellow-store</a></div>
-								<div class="web"><img src="img/telegram.jpg" alt="telegram_icon"><a href="#">yellow-store</a></div>
-								<div class="web"><img src="img/mail.jpg" alt="mail_icon"><a href="#">yellow@store.ru</a></div>
-							</div>
-						</div>
-					</div>
 				</div>
 				<div class="basket col-lg-2 col-12 d-none d-md-flex justify-content-end">
-					<div class="compare">
-						<img src="img/compare.png" alt="compare_icon">
-					</div>
+
 					<div class="bask">
 
-						<a href="bascket.html"><img src="img/basket.png" alt="basket_icon"></a>
+						<a href="bascket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 					</div>
 					<p class="d-md-none d-lg-block">товара на сумму <span>75 000</span> руб.</p>
 				</div>
@@ -123,8 +130,9 @@
 				<div class="catalog  col-md-12 col-8">
 					<ul>
 						<nav class="navbar navbar-expand-md w-100">
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-1"
-							 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent-1" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
 								<i class="fa fa-bars" aria-hidden="true"></i>
 							</button>
 
@@ -159,17 +167,7 @@
 						</nav>
 					</ul>
 				</div>
-				<div class="basket col-4 d-flex d-md-none align-items-start pt-2">
-					<div class="compare">
-						<a href="#">
-							<img src="img/compare.png" alt="compare_icon">
 
-						</a>
-					</div>
-					<div class="bask">
-						<a href="bascket.html"><img src="img/basket.png" alt="basket_icon"></a>
-					</div>
-				</div>
 
 			</div>
 		</div>
@@ -184,12 +182,16 @@
 				<div class="slider col-lg-6 col-12">
 					<div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
 						<ol class="carousel-indicators">
-							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><img src="img/foto.jpg" class="d-block w-100"
-								 alt=""></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="1"><img src="img/foto.jpg" class="d-block w-100" alt=""></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="2"><img src="img/foto.jpg" class="d-block w-100" alt=""></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="3"><img src="img/foto.jpg" class="d-block w-100" alt=""></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="4"><img src="img/foto.jpg" class="d-block w-100" alt=""></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><img
+									src="img/foto.jpg" class="d-block w-100" alt=""></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"><img src="img/foto.jpg"
+									class="d-block w-100" alt=""></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"><img src="img/foto.jpg"
+									class="d-block w-100" alt=""></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"><img src="img/foto.jpg"
+									class="d-block w-100" alt=""></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"><img src="img/foto.jpg"
+									class="d-block w-100" alt=""></li>
 
 						</ol>
 						<div class="carousel-inner">
@@ -215,16 +217,19 @@
 							</div>
 						</div>
 
-						<a class="carousel-control-prev d-none d-lg-block" href="#carouselExampleIndicators" role=" button" data-slide="prev">
+						<a class="carousel-control-prev d-none d-lg-block" href="#carouselExampleIndicators"
+							role=" button" data-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						</a>
-						<a class="carousel-control-next d-none d-lg-block" href="#carouselExampleIndicators" role=" button" data-slide="next">
+						<a class="carousel-control-next d-none d-lg-block" href="#carouselExampleIndicators"
+							role=" button" data-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
-					<p class="d-none d-xl-flex justify-content-center">Кликните на картинку для расширенного просмотра</p>
+					<p class="d-none d-xl-flex justify-content-center">Кликните на картинку для расширенного просмотра
+					</p>
 
 				</div>
 				<div class="description col-lg-6 col-12">
@@ -275,7 +280,8 @@
 
 						<p>78 500 руб.</p>
 					</div>
-					<div class="buttons"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить в
+					<div class="buttons"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i>Купить</button><a
+							href="№">Купить в
 							1
 							клик</a></div>
 				</div>
@@ -332,7 +338,13 @@
 							</tr>
 						</table>
 					</div>
-					<div id="panel2" class="tab-pane fade">
+					<div id="panel2" class="tab-pane fade opi">
+						Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+						officia deserunt mollit anim id est laborum.
 					</div>
 
 				</div>
@@ -360,10 +372,12 @@
 					<div id="slider">
 						<div class="item hit ">
 							<div class="content">
-								<a href="#"><img src="img/xiaiomi_redmi_note_6.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/xiaiomi_redmi_note_6.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Xiaomi Redmi Note 6 Pro 4Gb+64Gb (Черный) Global Version</h4>
+									<a href="1item.html">
+										<h4>Xiaomi Redmi Note 6 Pro 4Gb+64Gb (Черный) Global Version</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -392,7 +406,8 @@
 									<div class="compare"> <a href="#"><img src="img/compare_item.png" alt="compare"></a>
 									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -400,11 +415,13 @@
 						</div>
 						<div class="item free">
 							<div class="content">
-								<a href="#"><img src="img/apple_Iphone_x.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/apple_Iphone_x.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Apple iPhone X 64Gb A1901
-										(Cерый космос)</h4>
+									<a href="1item.html">
+										<h4>Apple iPhone X 64Gb A1901
+											(Cерый космос)</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -430,9 +447,11 @@
 										<p>руб.</p>
 									</div>
 									<span><strong>17 500</strong> руб.</span>
-									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a></div>
+									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a>
+									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -440,10 +459,12 @@
 						</div>
 						<div class="item">
 							<div class="content">
-								<a href="#"><img src="img/iphone_xa.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/iphone_xa.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Apple iPhone XS Max 64GB (золотистый)</h4>
+									<a href="1item.html">
+										<h4>Apple iPhone XS Max 64GB (золотистый)</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -469,9 +490,11 @@
 										<p>руб.</p>
 									</div>
 									<span><strong>17 500</strong> руб.</span>
-									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a></div>
+									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a>
+									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -479,11 +502,13 @@
 						</div>
 						<div class="item">
 							<div class="content">
-								<a href="#"><img src="img/redmi_a5.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/redmi_a5.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Xiaomi Redmi 5A 2Gb+16Gb
-										(Серый)</h4>
+									<a href="1item.html">
+										<h4>Xiaomi Redmi 5A 2Gb+16Gb
+											(Серый)</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -509,9 +534,11 @@
 										<p>руб.</p>
 									</div>
 									<span><strong>17 500</strong> руб.</span>
-									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a></div>
+									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a>
+									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -519,10 +546,12 @@
 						</div>
 						<div class="item hit ">
 							<div class="content">
-								<a href="#"><img src="img/xiaiomi_redmi_note_6.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/xiaiomi_redmi_note_6.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Xiaomi Redmi Note 6 Pro 4Gb+64Gb (Черный) Global Version</h4>
+									<a href="1item.html">
+										<h4>Xiaomi Redmi Note 6 Pro 4Gb+64Gb (Черный) Global Version</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -551,7 +580,8 @@
 									<div class="compare"> <a href="#"><img src="img/compare_item.png" alt="compare"></a>
 									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -559,11 +589,13 @@
 						</div>
 						<div class="item free">
 							<div class="content">
-								<a href="#"><img src="img/apple_Iphone_x.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/apple_Iphone_x.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Apple iPhone X 64Gb A1901
-										(Cерый космос)</h4>
+									<a href="1item.html">
+										<h4>Apple iPhone X 64Gb A1901
+											(Cерый космос)</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -589,9 +621,11 @@
 										<p>руб.</p>
 									</div>
 									<span><strong>17 500</strong> руб.</span>
-									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a></div>
+									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a>
+									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -599,10 +633,12 @@
 						</div>
 						<div class="item">
 							<div class="content">
-								<a href="#"><img src="img/iphone_xa.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/iphone_xa.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Apple iPhone XS Max 64GB (золотистый)</h4>
+									<a href="1item.html">
+										<h4>Apple iPhone XS Max 64GB (золотистый)</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -628,9 +664,11 @@
 										<p>руб.</p>
 									</div>
 									<span><strong>17 500</strong> руб.</span>
-									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a></div>
+									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a>
+									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -638,11 +676,13 @@
 						</div>
 						<div class="item">
 							<div class="content">
-								<a href="#"><img src="img/redmi_a5.jpg" alt=""></a>
+								<a href="1item.html"><img src="img/redmi_a5.jpg" alt=""></a>
 								<div class="des">
 									<p>Мобильный телефон</p>
-									<h4>Xiaomi Redmi 5A 2Gb+16Gb
-										(Серый)</h4>
+									<a href="1item.html">
+										<h4>Xiaomi Redmi 5A 2Gb+16Gb
+											(Серый)</h4>
+									</a>
 								</div>
 								<div class="buttons">
 									<div class="color">
@@ -668,9 +708,11 @@
 										<p>руб.</p>
 									</div>
 									<span><strong>17 500</strong> руб.</span>
-									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a></div>
+									<div class="compare"><a href="#"><img src="img/compare_item.png" alt="compare"></a>
+									</div>
 								</div>
-								<div class="buy"><button><img src="img/cart.png" alt="cart">Купить</button><a href="№">Купить
+								<div class="buy"><button><i class="fa fa-shopping-cart"
+											aria-hidden="true"></i>Купить</button><a href="№">Купить
 										в
 										1
 										клик</a></div>
@@ -684,52 +726,53 @@
 		</div>
 	</div>
 
-
 	<footer>
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="info col-lg-2 col-md-4 col-12 navbar navbar-expand-md flex-lg-column align-items-start">
 
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-1" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">Информация
-						<i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down" aria-hidden="true"></i></h4>
+					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-1"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						Информация
+						<i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down"
+							aria-hidden="true"></i></h4>
 					<h4 class="d-none d-md-block">Информация</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-1">
 						<div class="navbar-nav flex-column">
-							<li><a href="#">О компании</a></li>
+							<li><a href="#">О магазине</a></li>
 							<li><a href="#">Сертификаты</a></li>
 							<li><a href="#">Реквизиты</a></li>
 							<li><a href="#">Статьи</a></li>
-							<li><a href="#">Контакты</a></li>
 						</div>
 					</ul>
 				</div>
 				<div class="pok col-lg-3 col-md-4 col-12 navbar navbar-expand-md flex-lg-column align-items-start">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-2" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">Покупателю
-						<i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down" aria-hidden="true"></i></h4>
+					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-2"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						Покупателю
+						<i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down"
+							aria-hidden="true"></i></h4>
 					<h4 class="d-none d-md-block">Покупателю</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-2">
 						<div class="navbar-nav  mr-auto flex-column">
 							<li><a href="#">Акции и подарки</a></li>
 							<li><a href="#">Нашли дешевле?</a></li>
-							<li><a href="#">Гарантия</a></li>
 							<li><a href="#">Обработка персональных данных</a></li>
-							<li><a href="#">Оплата</a></li>
 							<li><a href="#">Партнерская программа</a></li>
 						</div>
 
 					</ul>
 				</div>
 				<div class="help col-lg-2 col-md-4 col-12 navbar navbar-expand-md flex-lg-column align-items-start">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-3" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">Помощь<i class="fa fa-arrow-up" aria-hidden="true"></i> <i
-						 class="fa fa-arrow-down" aria-hidden="true"></i></h4>
+					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-3"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						Помощь<i class="fa fa-arrow-up" aria-hidden="true"></i> <i class="fa fa-arrow-down"
+							aria-hidden="true"></i>
+					</h4>
 					<h4 class="d-none d-md-block">Помощь</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-3">
 						<div class="navbar-nav flex-column">
 							<li><a href="#">Как сделать заказ</a></li>
-							<li><a href="#">Часто задаваемые вопросы</a></li>
 							<li><a href="#">Условия доставки</a></li>
 							<li><a href="#">Адрес магазина</a></li>
 						</div>
@@ -737,36 +780,49 @@
 					</ul>
 				</div>
 				<div class="social col-lg-2 col-md-4 col-12 navbar navbar-expand-md flex-lg-column align-items-start ">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-4" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">Мы
-						в соцсетях <i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down" aria-hidden="true"></i></h4>
+					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-4"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Мы
+						в соцсетях <i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down"
+							aria-hidden="true"></i></h4>
 					<h4 class="d-none d-md-block">Мы в соцсетях</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-4">
 						<div class="navbar-nav flex-column">
-							<li><img src="img/vk.png" alt="icon_social"><a href="#">Вконтакте</a></li>
-							<li><img src="img/f.png" alt="icon_social"><a href="#">Facebook</a></li>
-							<li><img src="img/insta.png" alt="icon_social"><a href="#">Instagram</a></li>
-							<li><img src="img/tw.png" alt="icon_social"><a href="#">Твитер</a></li>
-							<li><img src="img/od.png" alt="icon_social"><a href="#">Одноклассники</a></li>
+							<li><a href="#">
+									<div class="img"><img src="img/vk.png" alt="icon_social"></div> Вконтакте
+								</a></li>
+							<li><a href="#">
+									<div class="img"><img src="img/f.png" alt="icon_social"></div> Facebook
+								</a></li>
+							<li><a href="#">
+									<div class="img"> <img src="img/insta.png" alt="icon_social"></div>Instagram
+								</a></li>
+							<li><a href="#">
+									<div class="img"><img src="img/tw.png" alt="icon_social"></div> Твитер
+								</a></li>
+							<li><a href="#">
+									<div class="img"><img src="img/od.png" alt="icon_social"></div>
+									Одноклассники
+								</a></li>
 						</div>
-
 					</ul>
 				</div>
 				<div class="contact col-lg-3 col-md-8 col-12 navbar navbar-expand-md flex-lg-column align-items-start ">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-5" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">Контакты
-						<i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down" aria-hidden="true"></i></h4>
+					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-5"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						Контакты
+						<i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-arrow-down"
+							aria-hidden="true"></i></h4>
 					<h4 class="d-none d-md-block">Контакты</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-5">
 						<div class="navbar-nav flex-column">
 							<li>Магазин работает: с 9:00 до 19:00г. Москва, ул. Ак. Королева, д. 12/5
 							</li>
 							<li>Ежедневно: с 8:00 до 24:00
-								+7 (800) 766 66 55
+								<a href="+7 (800) 766 66 55">+7 (800) 766 66 55</a>
 							</li>
 							<li>Звонки по РФ
-								8 (800) 946 10 20</li>
-							<li>E-mail: yellow@store.ru</li>
+								<a href="8 (800) 946 10 20"></a>8 (800) 946 10 20 </li>
+							<li>E-mail: <a href="#"> yellow@store.ru</a> </li>
 						</div>
 
 					</ul>
@@ -795,7 +851,9 @@
 		$("input[name='radion']").on('click', function () {
 			$('#slider').slick('slickGoTo', $(this).attr("id"))
 			console.log($(this).attr("id"))
-		})
+		}); function toogle() {
+			$('#menu-dropdown').slideToggle();
+		}
 		$(document).ready(function () {
 
 
@@ -804,30 +862,28 @@
 				slidesToShow: 4,
 				slidesToScroll: 1,
 				responsive: [{
-						breakpoint: 1024,
-						settings: {
-							slidesToShow: 3,
-							slidesToScroll: 1,
-							infinite: true,
-						}
-					},
-					{
-						breakpoint: 770,
-						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 1
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						infinite: true,
 					}
-					// You can unslick at a given breakpoint now by adding:
-					// settings: "unslick"
-					// instead of a settings object
+				},
+				{
+					breakpoint: 770,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+
 				]
 
 			});

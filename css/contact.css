@@ -14,7 +14,11 @@ footer .contact {
 header .contact {
     margin: 0;
 }
-
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .contact .pag a {
     color: #000000;
     text-decoration: underline;
@@ -35,13 +39,20 @@ header .contact {
 .contact .info .item {
     flex-wrap: wrap;
     display: flex;
-    margin: 20px 0;
+    margin: 10px 0;
+    width: 100%;
     padding: 5px 10px;
     border-radius: 10px;
     background: #eeebeb;
     align-items: center
 }
-
+.contact .info .item:nth-child(1){
+    margin-top: 0;
+}
+.contact .info .item:nth-last-child(1) 
+{
+    margin-bottom: 0;
+}
 .contact .info .item:nth-child(2) {
     flex-wrap: nowrap
 }
@@ -81,7 +92,6 @@ header .contact {
 }
 
 .form {
-    margin: 20px 0;
     padding: 20px;
     border: 4px solid #eeebeb;
     border-radius: 10px;
@@ -132,22 +142,25 @@ header .contact {
 }
 
 .form .submit label {
-    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 30px;
 }
 
 .form .submit label:before {
-    width: 10px;
-    height: 5px;
+
     margin-right: 5px;
-    padding: 5px 10px;
+    padding: 5px 11px;
     content: '';
+    margin-left: -29px;
     border-radius: 5px;
     border: 2px solid #c9cacb;
 }
 
 .form .submit input:checked+label::before {
     content: '\2713';
-    padding: 5px 4px;
+    padding: 5px 5.8px;
+        width: 10px;
+    height: 5px;
 
 }
 
