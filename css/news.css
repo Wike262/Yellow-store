@@ -29,13 +29,18 @@
 }
 
 .news .navig ul li {
-    margin: 0 10px;
+    margin: 0 5px;
 
+}
+
+.news .item .des a {
+    color: #000000;
+    text-decoration: underline;
 }
 
 .news .navig ul li a {
     color: #000000;
-    padding: 3px 5px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
@@ -83,4 +88,19 @@
 
 .pag {
     display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:576px) {
+    .news .img {
+        width: 100%;
+    }
+
+    .news .img img {
+        width: 100%;
+    }
 }

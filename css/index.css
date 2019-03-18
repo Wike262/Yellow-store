@@ -307,6 +307,7 @@
 }
 
 .catalog_items .item .buttons {
+  flex-direction: row;
   margin: 10px 0;
   width: 100%;
   flex-wrap: wrap;
@@ -422,7 +423,7 @@
 }
 
 .catalog_items .cena span {
-  color: #848486;
+  color: #dd2a2a;
   -webkit-text-decoration-line: line-through;
   text-decoration-line: line-through;
 }
@@ -475,18 +476,26 @@
   border-radius: 40px;
   border: none;
   background: #ffc501;
-}.catalog_items .buy button i {
+}
+
+.catalog_items .buy button i {
   font-size: 20px;
   color: #000000;
   margin-right: 10px;
 }
+
 .catalog_items .buy button:hover {
   background: #e2b724;
   color: #ffffff;
-}.catalog_items .buy button:hover i{
+}
+
+.catalog_items .buy button:hover i {
   color: #ffffff
 }
 
+.title h2 {
+  font-size: 27px;
+}
 
 .catalog_items .buy a {
   color: #313131;
@@ -567,14 +576,16 @@
 }
 
 .catalog_items .cena .cen h3 {
-  font-size: 26px;
+  font-size: 25px;
 }
 
 
 
 
 
-
+.catalog_items .item .des h4 {
+  color: #000000;
+}
 
 
 @media(min-width:720px) {
@@ -582,12 +593,13 @@
     flex-wrap: wrap;
   }
 
-  #slider {
-    max-width: 720px;
+  .catalog_items .cena .cen h3 {
+    margin-right: 0;
+    font-size: 19px !important;
   }
 
-  .catalog_items .cena .cen h3 {
-    font-size: 26px !important;
+  #slider {
+    max-width: 720px;
   }
 
   .catalog_items .cena span strong {
@@ -608,13 +620,57 @@
 
 }
 
+
+
+@media(max-width:375px) {
+  #slider {
+    width: 365px !important;
+  }
+}
+
+@media(max-width:320px) {
+  #slider {
+    width: 310px !important;
+  }
+}
+
 @media(max-width:576px) {
   .slider {
     height: 100vh;
   }
 
+  .slider .carousel-caption .des h2 {
+    font-size: 40px;
+  }
+
+  .catalog_items .hit:after {
+    padding: 5px 10px;
+    right: 20px;
+    font-size: 11px;
+  }
+
+  .catalog_items .free:after {
+    font-size: 11px;
+    right: 5px;
+  }
+
+  .catalog_items .item img {
+    max-width: 100px;
+  }
+
   #slider {
-    width: 350px;
+    width: 400px;
+  }
+
+  .slider ol {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+  }
+
+  .catalog_items .item .des h4 {
+    word-break: break-all;
+    height: 85px;
   }
 
   .carousel-img {
@@ -623,11 +679,16 @@
   }
 
   .catalog_items .cena .cen h3 {
-    font-size: 26px !important;
+    font-size: 23px;
+    margin-right: 5px;
+  }
+
+  .catalog_items .cena .cen p {
+    font-size: 14px !important;
   }
 
   .catalog_items .cena span strong {
-    font-size: 20px !important;
+    font-size: 14px !important;
 
   }
 
@@ -652,7 +713,7 @@
   }
 
   .carousel-caption .desc h2 {
-    font-size: 20px !important;
+    font-size: 36px !important;
   }
 }
 
@@ -667,14 +728,16 @@
   }
 
   .catalog_items .item .des h4 {
-    height: 70px;
+    height: 60px;
     color: #000000;
     text-decoration: none
   }
+
   .catalog_items .item .des a:hover {
     color: #000000;
     text-decoration: none
   }
+
   .catalog_items .cena .cen h3,
   .catalog_items .cena .cen p,
   .catalog_items .cena span strong,

@@ -1,4 +1,4 @@
-.menu:nth-child(2) {
+.menu:nth-child(4) {
     background: #efeeee
 }
 
@@ -7,10 +7,12 @@
 }
 
 .menu .item input[type="checkbox"]+label {
+    position: relative;
     cursor: pointer;
     width: 140px;
     margin-bottom: 20px;
     font-size: 14px;
+    padding-left: 30px;
 }
 
 .all {
@@ -18,9 +20,81 @@
     align-items: center;
 }
 
+.navig {
+    margin: 30px 0
+}
+
+.navig ul li {
+    margin: 0 5px;
+
+}
+
+.navig ul li a {
+    color: #000000;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.navig ul li i {
+    color: #cacaca;
+}
+
+.navig ul .active a {
+    background: #313131;
+    color: #ffffff
+}
+
+.pag {
+    display: flex;
+}
+
+.catalog_items .item {
+    margin: 10px 0 !important;
+}
+
+.catalog_items .menu .item {
+    margin: 20px 0;
+}
+
 .all p {
     margin-right: 10px;
     margin-bottom: 0;
+}
+
+.pag a img {
+    padding-left: 20px;
+}
+
+.pag a {
+    color: #000000;
+    text-decoration: underline;
+    margin-right: 20px;
+
+}
+
+
+.menu h2 {
+    display: flex;
+
+}
+
+.menu .item h2 img {
+    height: 20px !important;
+    width: 20px !important;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.rs-pointer {
+    background: url('../img/slider-arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    height: 40px !important;
+    width: 20px !important;
 }
 
 .dropdown-el {
@@ -45,11 +119,13 @@
     display: none;
 
 }
+
 .nice-select .option {
     background: #f0efef;
     display: flex;
     justify-content: center;
 }
+
 .nice-select {
     background: #f0efef;
     border-radius: 30px;
@@ -111,53 +187,65 @@
 }
 
 .menu .item input[type="checkbox"]+label:before {
-    width: 11px;
-    height: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    content: '';
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
     border-radius: 5px;
     border: 2px solid #c9cacb;
     background: #ffffff;
 }
-.catalog_items .title + button {
+
+.catalog_items .title+button {
     margin: 0 17px;
     padding: 10px 0;
     border-radius: 10px;
     border: none;
     font-size: 20px
-}.catalog_items .title + button img {
+}
+
+.catalog_items .title+button img {
     margin-left: 10px;
     height: 10px;
     width: 15px;
 }
-#filter{
+
+#filter {
     transition: none;
 }
+
 .rs-container .rs-scale span ins {
     display: none;
 }
 
-#down1,
-#down2 {
-    display: none
+
+#cont_3,
+#cont_4,
+#cont_5 {
+    display: none;
 }
 
 #up3,
 #up4,
 #up5 {
-    display: none;
+    transform: rotate(-180deg);
 }
 
 .cont {
     transition: none;
 }
+
 .menu:nth-child(3) {
     background: #efeeee;
 }
+
 .menu input[type="checkbox"]:checked+label::before {
-    content: '\2713';
-    padding: 5px 5.8px;
+    content: "\2713";
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .menu input[type="text"] {

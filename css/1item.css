@@ -99,7 +99,6 @@
     margin: 0;
     margin-right: 40%;
     font-size: 26px;
-    color: #d7d9dd;
     text-decoration-line: line-through;
 }
 
@@ -136,10 +135,12 @@
 .item ul span {
     color: #313130
 }
+
 .item .description .cont {
     font-size: 16px;
     padding-bottom: 10px;
 }
+
 .item .cena {
     border-top: 1px solid #d7d9dd;
     padding-top: 30px;
@@ -167,18 +168,23 @@
     border-radius: 40px;
     border: none;
     background: #ffc501;
-}.item .buttons  button i {
+}
+
+.item .buttons button i {
     font-size: 20px;
     color: #000000;
     margin-right: 10px;
-  }
-  .item .buttons  button:hover {
+}
+
+.item .buttons button:hover {
     background: #e2b724;
     color: #ffffff;
-  }.item .buttons  button:hover i{
+}
+
+.item .buttons button:hover i {
     color: #ffffff
-  }
-  
+}
+
 
 .item .buttons button img {
     margin: 0;
@@ -296,9 +302,11 @@
 #panel1 table tr {
     border-bottom: 1px solid #eae9e9;
 }
+
 #panel2 {
     margin: 20px;
 }
+
 #panel1 table td {
     padding: 10px 0;
 
@@ -430,7 +438,11 @@
     font-size: 16px;
     font-weight: bold;
 }
-.catalog_items .item .des a:hover{text-decoration: none;}
+
+.catalog_items .item .des a:hover {
+    text-decoration: none;
+}
+
 .catalog_items .item .buttons {
     margin: 10px 0;
     width: 100%;
@@ -558,11 +570,6 @@
     height: 20px;
 }
 
-.catalog_items .cena span {
-    color: #848486;
-    -webkit-text-decoration-line: line-through;
-    text-decoration-line: line-through;
-}
 
 .catalog_items .cena .cen {
     font-weight: bold;
@@ -584,6 +591,7 @@
 .catalog_items .cena .compare img {
     margin-bottom: 10px;
 }
+
 .catalog_items .buy {
     margin-top: 20px;
     display: -webkit-box;
@@ -628,13 +636,16 @@
         margin-left: 70px !important;
     }
 
-    .carousel-item img, .carousel-item .active, .carousel-inner {
+    .carousel-item img,
+    .carousel-item .active,
+    .carousel-inner {
         max-width: 350px;
     }
 
     .item .cena p {
         margin-right: 0;
     }
+
     #panel1 table td:nth-child(2) {
         width: 45%;
     }
@@ -644,7 +655,10 @@
     #slider {
         max-width: 1250px !important;
     }
-    .carousel-item img, .carousel-item .active, .carousel-inner {
+
+    .carousel-item img,
+    .carousel-item .active,
+    .carousel-inner {
         max-width: 450px;
     }
 
@@ -682,7 +696,7 @@
 
 @media(max-width:576px) {
     #slider {
-        width: 350px;
+        width: 410px;
     }
 
     .tab-content table {

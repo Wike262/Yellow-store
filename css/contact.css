@@ -14,11 +14,13 @@ footer .contact {
 header .contact {
     margin: 0;
 }
+
 .info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .contact .pag a {
     color: #000000;
     text-decoration: underline;
@@ -46,13 +48,15 @@ header .contact {
     background: #eeebeb;
     align-items: center
 }
-.contact .info .item:nth-child(1){
+
+.contact .info .item:nth-child(1) {
     margin-top: 0;
 }
-.contact .info .item:nth-last-child(1) 
-{
+
+.contact .info .item:nth-last-child(1) {
     margin-bottom: 0;
 }
+
 .contact .info .item:nth-child(2) {
     flex-wrap: nowrap
 }
@@ -144,23 +148,26 @@ header .contact {
 .form .submit label {
     padding-top: 10px;
     padding-left: 30px;
+    position: relative;
 }
 
 .form .submit label:before {
-
-    margin-right: 5px;
-    padding: 5px 11px;
-    content: '';
-    margin-left: -29px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    content: "";
     border-radius: 5px;
     border: 2px solid #c9cacb;
 }
 
 .form .submit input:checked+label::before {
-    content: '\2713';
-    padding: 5px 5.8px;
-        width: 10px;
-    height: 5px;
+    content: "\2713";
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
