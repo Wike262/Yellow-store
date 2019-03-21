@@ -431,6 +431,7 @@ header .catalog ul li a {
 
 footer {
   padding: 50px 0;
+  padding-bottom: 10px;
   background: #313131;
   color: #ffffff;
 }
@@ -706,6 +707,11 @@ footer .text {
 @media(max-width:576px) {
   .nav-item:after {
     display: none;
+  }
+
+  footer .contact li {
+    width: 80%;
+    text-align: center;
   }
 
   header .contact h3 {

@@ -18,16 +18,7 @@
 	<header>
 		<div class="container">
 			<div class="row justify-content-between py-3 align-items-center">
-				<div class="social col-lg-4 col-xl-3 col-md-2 col-4 d-none d-md-flex">
-					<p class="d-none d-lg-block">Добавляйтесь к нам</p>
-					<div class="icons d-flex justify-content-between d-md-block align-items-start">
-						<a href="#"><img src="img/tw.png" alt="icon_social"></a>
-						<a href="#"><img src="img/vk.png" alt="icon_social"></a>
-						<a href="#"><img src="img/f.png" alt="icon_social"></a>
-						<a href="#"><img src="img/insta.png" alt="icon_social"></a>
-						<a href="#"><img src="img/od.png" alt="icon_social"></a>
-					</div>
-				</div>
+
 				<div class="basket col-2 d-flex d-md-none align-items-start pt-2 order-last">
 					<div class="bask">
 						<a href="bascket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -36,7 +27,7 @@
 				<div class="contact d-md-none d-block col-6 order-2 ">
 					<h3>+7 (800) 920-85-95</h3>
 				</div>
-				<div class="navigation col-lg-8 col-xl-9 col-md-10 col-2 order-lg-0 order-first d-flex justify-content-start justify-content-md-end">
+				<div class="navigation col-md-12 col-2 order-lg-0 order-first d-flex justify-content-center">
 					<nav class="navbar navbar-expand-md">
 						<button class="navbar-toggler" onclick="toogle();">
 							<i class="fa fa-bars" aria-hidden="true"></i>
@@ -168,15 +159,7 @@
 	</header>
 	<div class="slider">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-
-			</ol>
-			<div class="carousel-inner">
+			<div class="slick" id="slick">
 				<div class="carousel-item active">
 					<img src="img/bg.jpg" class="d-block w-100" alt="">
 					<div class="carousel-caption d-none d-md-block justify-content-between d-flex flex-row">
@@ -313,12 +296,12 @@
 	<div class="catalog_items">
 		<div class="container">
 			<div class="row">
-				<div class="title col-12">
+				<div class="title col-12 justify-content-center justify-content-md-between">
 					<div class="radio">
 						<h2>Новинки</h2>
 
 					</div>
-					<div class="all">
+					<div class="all d-none d-md-block">
 						<a href="#">Все новинки</a>
 					</div>
 				</div>
@@ -326,12 +309,12 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/xiaiomi_redmi_note_6.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Xiaomi Redmi Note 6 Pro 4Gb+64Gb (Черный) Global Version</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color" id="color_1" checked>
 								<label for="color_1"></label>
@@ -368,13 +351,13 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/apple_Iphone_x.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Apple iPhone X 64Gb A1901
 									(Cерый космос)</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color1" id="color_1_1" checked>
 								<label for="color_1_1"></label>
@@ -411,12 +394,12 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/iphone_xa.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Apple iPhone XS Max 64GB (золотистый)</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color2" id="color_1_2" checked>
 								<label for="color_1_2"></label>
@@ -453,13 +436,13 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/redmi_a5.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Xiaomi Redmi 5A 2Gb+16Gb
 									(Серый)</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color3" id="color_1_3" checked>
 								<label for="color_1_3"></label>
@@ -496,13 +479,13 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/redmi_5.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Xiaomi Redmi Note 5 3Gb+32Gb
 									(Розовый)</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color4" id="color_1_4" checked>
 								<label for="color_1_4"></label>
@@ -539,12 +522,12 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/mi_a2.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Телефон Xiaomi Mi A2 Lite 4gb+64Gb (Черный) Global Version</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color5" id="color_1_5" checked>
 								<label for="color_1_5"></label>
@@ -581,13 +564,13 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/iphone_7.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Apple iPhone 7 128Gb
 									A1778 (Gold)</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color6" id="color_1_6" checked>
 								<label for="color_1_6"></label>
@@ -624,13 +607,13 @@
 					<div class="content">
 						<a href="1item.html"><img src="img/iphone_xr.jpg" alt=""></a>
 						<div class="des">
-							<p>Мобильный телефон</p>
+							<p class="d-none d-md-block">Мобильный телефон</p>
 							<a href="1item.html">
 								<h4>Apple iPhone XR 64Gb
 									(Yellow)</h4>
 							</a>
 						</div>
-						<div class="buttons d-none d-md-block">
+						<div class="buttons">
 							<div class="color">
 								<input type="radio" name="color7" id="color_1_7" checked>
 								<label for="color_1_7"></label>
@@ -663,23 +646,12 @@
 								клик</a></div>
 					</div>
 				</div>
-				<div class="title col-12">
-					<div class="radio">
+				<div class="title col-12 justify-content-center justify-content-md-between ">
+					<div class="radio flex-column flex-md-row">
 						<h2>Распродажа</h2>
-						<div class="inputs">
-							<input type="radio" name="radion1" id="0" checked>
-							<label for="0"></label>
-							<input type="radio" name="radion1" id="1">
-							<label for="1"></label>
-							<input type="radio" name="radion1" id="2">
-							<label for="2"></label>
-							<input type="radio" name="radion1" id="3">
-							<label for="3"></label>
-							<input type="radio" name="radion1" id="4">
-							<label for="4"></label>
-						</div>
+
 					</div>
-					<div class="all">
+					<div class="all d-none d-md-block">
 						<a href="#">Все товары</a>
 					</div>
 				</div>
@@ -688,12 +660,12 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_1.jpg" alt=""></a>
 							<div class="des">
-								<p>Ноутбук</p>
+								<p class="d-none d-md-block">Ноутбук</p>
 								<a href="1item.html">
 									<h4>Apple MacBook Pro 15" 256GB Touch Bar (серебристый)</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color8" id="color_1_8" checked>
 									<label for="color_1_8"></label>
@@ -729,12 +701,12 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_2.jpg" alt=""></a>
 							<div class="des">
-								<p>Планшет</p>
+								<p class="d-none d-md-block">Планшет</p>
 								<a href="1item.html">
 									<h4>Apple iPad 9.7 Wi-Fi + Cellular 128Gb 2018 (золотистый)</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color9" id="color_1_9" checked>
 									<label for="color_1_9"></label>
@@ -770,12 +742,12 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_3.jpg" alt=""></a>
 							<div class="des">
-								<p>Наушники</p>
+								<p class="d-none d-md-block">Наушники</p>
 								<a href="1item.html">
 									<h4>Xiaomi Hybrid Dual Drivers Earphones (Piston 4) Золотой</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color10" id="color_1_10" checked>
 									<label for="color_1_10"></label>
@@ -811,13 +783,13 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_4.jpg" alt=""></a>
 							<div class="des">
-								<p>Наушники</p>
+								<p class="d-none d-md-block">Наушники</p>
 								<a href="1item.html">
 									<h4>Apple Watch Series 4, ремешок
 										из нейлона «розовый песок»</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color11" id="color_1_11" checked>
 									<label for="color_1_11"></label>
@@ -853,12 +825,12 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_1.jpg" alt=""></a>
 							<div class="des">
-								<p>Ноутбук</p>
+								<p class="d-none d-md-block">Ноутбук</p>
 								<a href="1item.html">
 									<h4>Apple MacBook Pro 15" 256GB Touch Bar (серебристый)</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color8" id="color_1_8" checked>
 									<label for="color_1_8"></label>
@@ -894,12 +866,12 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_2.jpg" alt=""></a>
 							<div class="des">
-								<p>Планшет</p>
+								<p class="d-none d-md-block">Планшет</p>
 								<a href="1item.html">
 									<h4>Apple iPad 9.7 Wi-Fi + Cellular 128Gb 2018 (золотистый)</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color9" id="color_1_9" checked>
 									<label for="color_1_9"></label>
@@ -935,12 +907,12 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_3.jpg" alt=""></a>
 							<div class="des">
-								<p>Наушники</p>
+								<p class="d-none d-md-block">Наушники</p>
 								<a href="1item.html">
 									<h4>Xiaomi Hybrid Dual Drivers Earphones (Piston 4) Золотой</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color10" id="color_1_10" checked>
 									<label for="color_1_10"></label>
@@ -976,13 +948,13 @@
 						<div class="content">
 							<a href="1item.html"><img src="img/ras_4.jpg" alt=""></a>
 							<div class="des">
-								<p>Наушники</p>
+								<p class="d-none d-md-block">Наушники</p>
 								<a href="1item.html">
 									<h4>Apple Watch Series 4, ремешок
 										из нейлона «розовый песок»</h4>
 								</a>
 							</div>
-							<div class="buttons d-none d-md-block">
+							<div class="buttons">
 								<div class="color">
 									<input type="radio" name="color11" id="color_1_11" checked>
 									<label for="color_1_11"></label>
@@ -1022,11 +994,11 @@
 	<div class="reviews">
 		<div class="container">
 			<div class="row">
-				<div class="title col-12">
+				<div class="title col-12 justify-content-center justify-content-md-between">
 					<div class="radio">
 						<h2>Видео обзор</h2>
 					</div>
-					<div class="all">
+					<div class="all d-none d-lg-block">
 						<a href="#">Все обзоры</a>
 					</div>
 				</div>
@@ -1076,11 +1048,11 @@
 	<div class="news">
 		<div class="container">
 			<div class="row">
-				<div class="title col-12">
+				<div class="title col-12 justify-content-center justify-content-md-between">
 					<div class="radio">
 						<h2>Новости</h2>
 					</div>
-					<div class="all">
+					<div class="all d-none d-md-block">
 						<a href="#">Все новости</a>
 					</div>
 				</div>
@@ -1127,7 +1099,7 @@
 	<div class="info">
 		<div class="container">
 			<div class="row">
-				<div class="title col-12">
+				<div class="title col-12 justify-content-center justify-content-lg-start">
 					<h2>интернет магазин yellow-store</h2>
 				</div>
 				<div class="content col-12">
@@ -1169,7 +1141,7 @@
 	<footer>
 		<div class="container">
 			<div class="row justify-content-between ">
-				<div class="info col-lg-2 col-md-4 col-12 navbar navbar-expand-md justify-content-center  justify-content-center flex-lg-column align-items-start">
+				<div class="info col-lg-3 col-md-3 col-12 navbar navbar-expand-md justify-content-center flex-lg-column align-items-start justify-content-md-start">
 
 					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-1" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
@@ -1179,29 +1151,25 @@
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-1">
 						<div class="navbar-nav flex-column align-items-center align-items-md-start">
 							<li><a href="#">О магазине</a></li>
-							<li><a href="#">Сертификаты</a></li>
-							<li><a href="#">Реквизиты</a></li>
-							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Контакты</a></li>
 						</div>
 					</ul>
 				</div>
-				<div class="pok col-lg-3 col-md-4 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start">
+				<div class="pok col-lg-3 col-md-3 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start justify-content-md-start">
 					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-2" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
 						Покупателю
 					</h4>
 					<h4 class="d-none d-md-block">Покупателю</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-2">
-						<div class="navbar-nav  mr-auto flex-column align-content-center align-items-md-start">
-							<li><a href="#">Акции и подарки</a></li>
-							<li><a href="#">Нашли дешевле?</a></li>
-							<li><a href="#">Обработка персональных данных</a></li>
-							<li><a href="#">Партнерская программа</a></li>
+						<div class="navbar-nav flex-column align-items-center align-items-md-start">
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Гарантия</a></li>
 						</div>
 
 					</ul>
 				</div>
-				<div class="help col-lg-2 col-md-4 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start">
+				<div class="help col-lg-2 col-md-3 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start justify-content-md-start">
 					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-3" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
 						Помощь
@@ -1209,44 +1177,13 @@
 					<h4 class="d-none d-md-block">Помощь</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-3">
 						<div class="navbar-nav flex-column align-items-center align-items-md-start">
-							<li><a href="#">Как сделать заказ</a></li>
-							<li><a href="#">Условия доставки</a></li>
-							<li><a href="#">Адрес магазина</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
 						</div>
 
 					</ul>
 				</div>
-				<div class="social col-lg-2 col-md-4 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start ">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-4" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">Мы
-						в соцсетях </h4>
-					<h4 class="d-none d-md-block">Мы в соцсетях</h4>
-					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-4">
-						<div class="navbar-nav flex-column align-items-center align-items-md-start">
-							<li><a href="#">
-									<div class="img"><img src="img/vk.png" alt="icon_social"></div> Вконтакте
-								</a></li>
-							<li><a href="#">
-									<div class="img"><img src="img/f.png" alt="icon_social"></div> Facebook
-								</a></li>
-							<li><a href="#">
-									<div class="img"> <img src="img/insta.png" alt="icon_social"></div>Instagram
-								</a></li>
-							<li><a href="#">
-									<div class="img"><img src="img/tw.png" alt="icon_social"></div> Твитер
-								</a></li>
-							<li><a href="#">
-									<div class="img"><img src="img/od.png" alt="icon_social"></div>
-									Одноклассники
-								</a></li>
-						</div>
-					</ul>
-				</div>
-				<div class="contact col-lg-3 col-md-8 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start ">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-5" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">
-						Контакты
-					</h4>
+				<div class="contact col-lg-4 col-md-3 col-12 flex-column navbar navbar-expand justify-content-center  flex-lg-column align-items-start ">
+
 					<h4 class="d-none d-md-block">Контакты</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-5">
 						<div class="navbar-nav flex-column align-items-center align-items-md-start">
@@ -1257,7 +1194,7 @@
 							</li>
 							<li>Звонки по РФ
 								<a href="8 (800) 946 10 20">8 (800) 946 10 20 </a></li>
-							<li>E-mail: <a href="#"> yellow@store.ru</a> </li>
+							<li class="d-none d-md-block">E-mail: <a href="#"> yellow@store.ru</a> </li>
 						</div>
 
 					</ul>
@@ -1292,8 +1229,8 @@
 		}
 		$(document).ready(function () {
 
-
 			$('#slider').slick({
+				dots: true,
 				arrows: false,
 				slidesToShow: 4,
 				slidesToScroll: 1,
@@ -1322,6 +1259,14 @@
 				]
 
 			});
+		});
+
+		$('#slick').slick({
+			dots: true,
+			arrows: false,
+			autoplay: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
 		});
 	</script>
 </body>

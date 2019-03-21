@@ -54,7 +54,7 @@ header .contact {
 }
 
 .contact .info .item:nth-last-child(1) {
-    margin-bottom: 0;
+    flex-wrap: nowrap
 }
 
 .contact .info .item:nth-child(2) {
@@ -151,6 +151,11 @@ header .contact {
     position: relative;
 }
 
+.form .submit a {
+    color: #000000;
+    text-decoration: underline;
+}
+
 .form .submit label:before {
     margin-top: 10px;
     position: absolute;
@@ -164,7 +169,9 @@ header .contact {
 }
 
 .form .submit input:checked+label::before {
-    content: "\2713";
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA25pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBRDYxMjMzNTBCM0VFMzExOURBM0E5NzYyNDdGRDdFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEN0VFMUVDNjQ5RjcxMUU5OTFCMkJFRUU1OTYyNkM4MiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEN0VFMUVDNTQ5RjcxMUU5OTFCMkJFRUU1OTYyNkM4MiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOCAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyZTc1OGFiZC1kZTRhLWRhNDQtODJjYy01OTk3ZTYyZjc5NmQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUQ2MTIzMzUwQjNFRTMxMTlEQTNBOTc2MjQ3RkQ3RUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz45+oMdAAAAvklEQVR42mL8//8/AzFAT08vGkilMRGp2A9ILQFiOSYiFLsDqQ1Q7mwmoAA/HsX2QGobEDMCce2lS5faQDYcAUoUYVFsAaR2QxW3ARW3gMRBGkA29AIVeCMpNgJS+4GYGYj7gYqrYXKMurq6yUB6DhD/AWJtIP4HxBeAmB3kZqDiLGSbGUHBCjSxEciuAeI3UCcIAPFSoOJEdKcywuIBqGk5kAqC2rARqDgCW0CwILETgFgaiN8CcRSukAMIMACfDDaJmdWPswAAAABJRU5ErkJggg==);
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

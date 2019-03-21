@@ -19,6 +19,80 @@
     margin-top: 30px;
 }
 
+#slick1 .slick-dots {
+    bottom: auto !important;
+    top: 60px !important;
+    left: 0 !important;
+    width: fit-content !important;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#slick1 .slick-dots .slick-active button {
+    border: 3px solid #ffc501 !important;
+}
+
+#slick1 .slick-prev,
+#slick1 .slick-next {
+    background: url(../img/arrow-down.png);
+    background-size: 100%;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1000;
+}
+
+#slick1 .slick-prev:before,
+#slick1 .slick-next:before {
+    content: none;
+}
+
+#slick1 .slick-prev {
+    top: 20px;
+    left: 40px;
+    transform: rotate(180deg);
+}
+
+#slick1 .slick-next {
+    top: auto;
+    bottom: 20px;
+    left: 40px;
+}
+
+#slick1 .slick-dots li button {
+    cursor: pointer !important;
+    width: 60px !important;
+    height: 60px !important;
+    background: url(../img/basket_item.jpg) no-repeat top center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    border: 3px solid transparent !important;
+
+    border-radius: 0 !important;
+}
+
+#slick1 img {
+    margin-left: 100px;
+}
+
+#slick1 .slick-dots li {
+    margin-bottom: 40px !important;
+
+}
+
+#slick1 .slick-dots li button:before {
+    content: none !important;
+}
+
 .pag {
     display: flex;
 }
@@ -348,6 +422,7 @@
 .catalog_items .title .radio h2 {
     text-transform: uppercase;
     margin-right: 25px;
+    margin-bottom: 30px;
 }
 
 .catalog_items .title .radio input {
@@ -490,6 +565,11 @@
     border: 4px solid #ffeba6;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+}
+
+.slick-dots {
+    top: -44px;
+    left: 520px !important;
 }
 
 .catalog_items .item .color input:nth-child(1)+label {
@@ -694,6 +774,12 @@
     }
 }
 
+@media(max-width:330px) {
+    #slick1 .slick-dots li {
+        margin-right: 28px !important;
+    }
+}
+
 @media(max-width:576px) {
     #slider {
         width: 410px;
@@ -701,6 +787,101 @@
 
     .tab-content table {
         width: 100%;
+    }
+
+    .slick-dots {
+        top: -10px;
+        left: 0 !important;
+    }
+
+    #slick1 .slick-dots li button {
+        cursor: pointer !important;
+        width: 50px !important;
+        height: 50px !important;
+        background: url(../img/basket_item.jpg) no-repeat top center;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat !important;
+        border: 3px solid transparent !important;
+
+        border-radius: 0 !important;
+    }
+
+    #slick1 .slick-dots {
+        top: auto !important;
+        bottom: -70px !important;
+        left: 5px !important;
+        width: fit-content !important;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+
+    }
+
+    #slick1 .slick-dots li {
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+
+    #slick1 img {
+        margin: 0;
+    }
+
+    #slick1 .slick-dots .slick-active button {
+        border: 3px solid #ffc501 !important;
+    }
+
+    #slick1 .slick-prev,
+    #slick1 .slick-next {
+        background: url('../img/arrow-down.png');
+        background-size: 100%;
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    #slick1 .slick-prev:before,
+    #slick1 .slick-next:before {
+        content: none;
+    }
+
+    #slick1 .slick-prev {
+        bottom: -50px;
+        top: auto;
+        left: -20px;
+        transform: rotate(90deg);
+    }
+
+    #slick1 .slick-next {
+        bottom: -50px;
+        top: auto;
+        left: auto;
+        right: -10px;
+        transform: rotate(-90deg);
+
+    }
+
+    .carousel-control-prev {
+        top: auto;
+        transform: rotate(90deg);
+        bottom: -35px;
+        left: -10px;
+    }
+
+    .carousel-control-next {
+        top: auto;
+        transform: rotate(90deg);
+        bottom: -35px;
+        left: auto;
+        right: -10px;
     }
 
     .tab-pane {

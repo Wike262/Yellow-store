@@ -9,6 +9,32 @@
 
 }
 
+.slick-dots {
+    bottom: auto !important;
+    top: -60px !important;
+    left: 220px !important;
+    width: fit-content !important;
+
+}
+
+.slick-dots .slick-active button {
+    background: #ffc501 !important;
+}
+
+.slick-dots li button {
+    cursor: pointer !important;
+    margin-right: 5px !important;
+    width: 15px !important;
+    height: 15px !important;
+    background: #e2e2e2 !important;
+    -webkit-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.slick-dots li button:before {
+    content: none !important;
+}
+
 .basket {
     margin-top: 40px;
 }
@@ -256,7 +282,52 @@ table .summ,
     border: 1px solid #c9cacb;
 }
 
+.nice-select .option {
+    display: flex;
+    justify-content: start;
+}
 
+.catalog_items .item .des a {
+    text-decoration: none;
+}
+
+.nice-select {
+    border-radius: 30px;
+}
+
+.open {
+    border-radius: 20px 20px 0 0;
+}
+
+.slick-dots li {
+    left: 30px;
+}
+
+.slick-dots {
+    left: 500px !important;
+}
+
+.nice-select .list {
+    margin: 0;
+    margin-top: -1px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: none;
+    border: 1px solid #c9cacb;
+    border-top: none;
+}
+
+.nice-select.open .list {
+    -webkit-transform: scale(1.009) translateY(0);
+    -ms-transform: scale(1.009) translateY(0);
+    transform: scale(1.009) translateY(0);
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background: #f0efef;
+}
 
 .content input {
     width: 100%;
@@ -316,7 +387,9 @@ table .summ,
 }
 
 .order .item .chek input:checked+label::before {
-    content: "\2713";
+    background-image: url(../img/^.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,6 +446,14 @@ table .summ,
 @media(max-width: 576px) {
     .count span {
         font-weight: normal;
+    }
+
+    .slick-dots {
+        bottom: auto !important;
+        top: -30px !important;
+        left: 50px !important;
+        width: fit-content !important;
+
     }
 
     .item .buttons button {

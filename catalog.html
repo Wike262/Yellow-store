@@ -9,13 +9,13 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://www.cssscript.com/demo/animated-customizable-range-slider-pure-javascript-rslider-js/css/rSlider.min.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/catalog.css">
-	<link rel="stylesheet" href="css/index.css">
 
 </head>
 
@@ -23,16 +23,7 @@
 	<header>
 		<div class="container">
 			<div class="row justify-content-between py-3 align-items-center">
-				<div class="social col-lg-4 col-xl-3 col-md-2 col-4 d-none d-md-flex">
-					<p class="d-none d-lg-block">Добавляйтесь к нам</p>
-					<div class="icons d-flex justify-content-between d-md-block align-items-start">
-						<a href="#"><img src="img/tw.png" alt="icon_social"></a>
-						<a href="#"><img src="img/vk.png" alt="icon_social"></a>
-						<a href="#"><img src="img/f.png" alt="icon_social"></a>
-						<a href="#"><img src="img/insta.png" alt="icon_social"></a>
-						<a href="#"><img src="img/od.png" alt="icon_social"></a>
-					</div>
-				</div>
+
 				<div class="basket col-2 d-flex d-md-none align-items-start pt-2 order-last">
 					<div class="bask">
 						<a href="bascket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -41,7 +32,8 @@
 				<div class="contact d-md-none d-block col-6 order-2 ">
 					<h3>+7 (800) 920-85-95</h3>
 				</div>
-				<div class="navigation col-lg-8 col-xl-9 col-md-10 col-2 order-lg-0 order-first d-flex justify-content-start justify-content-md-end">
+				<div class="navigation col-md-12 col-2 order-lg-0 order-first d-flex justify-content-center">
+
 					<nav class="navbar navbar-expand-md">
 						<button class="navbar-toggler" onclick="toogle();">
 							<i class="fa fa-bars" aria-hidden="true"></i>
@@ -175,41 +167,24 @@
 	<div class="catalog_items">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="pag col-lg-3 col-12 mt-4">
-					<a href="#">Главная <img src="img/pag.png" alt=""></a>
-					<p>Iphone</p>
-				</div>
-				<div class="title col-lg-9 col-12 flex-wrap">
-					<div class="radio">
-						<h2>Iphone</h2>
-					</div>
-					<div class="all">
-						<p>Сортировать:</p>
-						<select name="sort" id="">
-							<option value="1" selected>По названию</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-						</select>
-					</div>
-				</div>
-				<button onclick="toogle2()" class="d-flex d-md-none col-11 justify-content-center align-items-center">Развернуть
-					фильтр <img src="img/arrow-down1.png" alt=""></button>
+
+
 				<div id="filter" class="menu col-lg-3 col-11 d-none d-md-block">
 					<div class="item">
 						<h2>Цена</h2>
 						<div class="inputs">
 							<div class="line">
 								<p>от</p>
-								<input type="text">
+								<input type="text" id="ot1">
 							</div>
 							<div class="line">
 								<p>до</p>
-								<input type="text">
+								<input type="text" id="do1">
 							</div>
 						</div>
-						<div class="container pt-2">
-							<input type="text" id="time_range" class="slider" />
+						<div class="container pb-2">
+							<input type="text" class="js-range-slider" name="range" id="slider" data-type="double" data-min="0" data-max="1000"
+							 data-from="200" data-to="500" data-grid="true" value="0" />
 						</div>
 					</div>
 					<div class="item">
@@ -257,17 +232,17 @@
 						</h2>
 						<div class="cont" id="cont_3">
 							<div class="line">
-								<input type="checkbox" name="raz" id="raz_1">
-								<label for="raz_1">2040x1080</label>
-								<input type="checkbox" name="raz" id="raz_2">
-								<label for="raz_2">1920х1080</label>
+								<input type="checkbox" name="raz1" id="raz_1_1">
+								<label for="raz_1_1">2040x1080</label>
+								<input type="checkbox" name="raz1" id="raz_2_1">
+								<label for="raz_2_1">1920х1080</label>
 							</div>
 							<div class="line">
 
-								<input type="checkbox" name="raz" id="raz_3">
-								<label for="raz_3">1280x720</label>
-								<input type="checkbox" name="raz" id="raz_4">
-								<label for="raz_4">960x540</label>
+								<input type="checkbox" name="raz1" id="raz_3_1">
+								<label for="raz_3_1">1280x720</label>
+								<input type="checkbox" name="raz1" id="raz_4_1">
+								<label for="raz_4_1">960x540</label>
 							</div>
 						</div>
 					</div>
@@ -276,17 +251,17 @@
 						</h2>
 						<div class="cont" id="cont_4">
 							<div class="line">
-								<input type="checkbox" name="raz" id="raz_1">
-								<label for="raz_1">2040x1080</label>
-								<input type="checkbox" name="raz" id="raz_2">
-								<label for="raz_2">1920х1080</label>
+								<input type="checkbox" name="raz2" id="raz_1_2">
+								<label for="raz_1_2">2040x1080</label>
+								<input type="checkbox" name="raz2" id="raz_2_2">
+								<label for="raz_2_2">1920х1080</label>
 							</div>
 							<div class="line">
 
-								<input type="checkbox" name="raz" id="raz_3">
-								<label for="raz_3">1280x720</label>
-								<input type="checkbox" name="raz" id="raz_4">
-								<label for="raz_4">960x540</label>
+								<input type="checkbox" name="raz2" id="raz_3_2">
+								<label for="raz_3_2">1280x720</label>
+								<input type="checkbox" name="raz2" id="raz_4_2">
+								<label for="raz_4_2">960x540</label>
 							</div>
 						</div>
 					</div>
@@ -295,17 +270,17 @@
 						</h2>
 						<div class="cont" id="cont_5">
 							<div class="line">
-								<input type="checkbox" name="raz" id="raz_1">
-								<label for="raz_1">2040x1080</label>
-								<input type="checkbox" name="raz" id="raz_2">
-								<label for="raz_2">1920х1080</label>
+								<input type="checkbox" name="raz3" id="raz_1_3">
+								<label for="raz_1_3">2040x1080</label>
+								<input type="checkbox" name="raz3" id="raz_2_3">
+								<label for="raz_2_3">1920х1080</label>
 							</div>
 							<div class="line">
 
-								<input type="checkbox" name="raz" id="raz_3">
-								<label for="raz_3">1280x720</label>
-								<input type="checkbox" name="raz" id="raz_4">
-								<label for="raz_4">960x540</label>
+								<input type="checkbox" name="raz3" id="raz_3_3">
+								<label for="raz_3_3">1280x720</label>
+								<input type="checkbox" name="raz3" id="raz_4_3">
+								<label for="raz_4_3">960x540</label>
 							</div>
 						</div>
 					</div>
@@ -314,370 +289,514 @@
 						<a href="#">Очистить фильтр</a>
 					</div>
 				</div>
-				<div class="item hit col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1item.html"><img src="img/xiaiomi_redmi_note_6.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1item.html">
-								<h4>Xiaomi Redmi Note 6 Pro 4Gb+64Gb (Черный) Global Version</h4>
-							</a>
+				<div class="container-fluid" id="catalog">
+					<div class="row">
+						<div class="pag col-lg-12 col-12">
+							<a href="#">Главная <img src="img/pag.png" alt=""></a>
+							<p>Iphone</p>
 						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color" id="color_1" checked>
-								<label for="color_1"></label>
-								<input type="radio" name="color" id="color_2">
-								<label for="color_2"></label>
-								<input type="radio" name="color" id="color_3">
-								<label for="color_3"></label>
-								<input type="radio" name="color" id="color_4">
-								<label for="color_4"></label>
+						<div class="title col-lg-12 col-12 flex-wrap">
+							<div class="radio">
+								<h2>Iphone</h2>
 							</div>
-							<div class="em">
-								<input type="radio" name="em" id="em_1" checked>
-								<label for="em_1">64 Gb</label>
-								<input type="radio" name="em" id="em_2">
-								<label for="em_2">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+							<button id="filterbutt" onclick="toogle2()" class="d-flex d-md-none col-11 justify-content-center align-items-center">Развернуть
+								фильтр <img src="img/arrow-down1.png" alt=""></button>
+							<div id="filter1" class="menu col-lg-3 col-11">
+								<div class="item">
+									<h2>Цена</h2>
+									<div class="inputs">
+										<div class="line">
+											<p>от</p>
+											<input type="text">
+										</div>
+										<div class="line">
+											<p>до</p>
+											<input type="text">
+										</div>
+									</div>
+									<div class="container pt-2">
+										<input type="text" class="js-range-slider" name="range" id="slider" data-type="double" data-min="0" data-max="1000"
+										 data-from="200" data-to="500" data-grid="true" value="0" />
+									</div>
+								</div>
+								<div class="item">
+									<h2 onclick="toogle1('#cont_6',6);" class="up">Разрешение экрана <img id="up6" src="img/menu-arrow.png" alt=""></h4>
+									</h2>
+									<div class="cont" id="cont_6">
+										<div class="line">
+											<input type="checkbox" name="raz4" id="raz_1_4">
+											<label for="raz_1_4">2040x1080</label>
+											<input type="checkbox" name="ra4z" id="raz_2_4">
+											<label for="raz_2_4">1920х1080</label>
+										</div>
+										<div class="line">
 
+											<input type="checkbox" name="raz4" id="raz_3_4">
+											<label for="raz_3_4">1280x720</label>
+											<input type="checkbox" name="raz4" id="raz_4_4">
+											<label for="raz_4_$">960x540</label>
+										</div>
+									</div>
+
+								</div>
+								<div class="item">
+									<h2 onclick="toogle1('#cont_7',7);">Емкость аккумулятора <img id="up7" src="img/menu-arrow.png" alt=""></i>
+									</h2>
+									<div class="cont" id="cont_7">
+										<div class="line">
+											<input type="checkbox" name="emk1" id="emk_1_1">
+											<label for="emk_1_1">до 2499 мАч</label>
+											<input type="checkbox" name="emk1" id="emk_2_1">
+											<label for="emk_2_1">от 2500 мАч</label>
+										</div>
+										<div class="line">
+											<input type="checkbox" name="emk1" id="emk_3_1">
+											<label for="emk_3_1">от 3000 мАч</label>
+											<input type="checkbox" name="emk1" id="emk_4_1">
+											<label for="emk_4_1">более 3500 мАч</label>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="item">
+									<h2 onclick="toogle1('#cont_8',8);">Оперативная память<img id="up8" src="img/menu-arrow.png" alt=""></i>
+									</h2>
+									<div class="cont" id="cont_8">
+										<div class="line">
+											<input type="checkbox" name="raz5" id="raz_1_5">
+											<label for="raz_1_5">2040x1080</label>
+											<input type="checkbox" name="raz5" id="raz_2_5">
+											<label for="raz_2_5">1920х1080</label>
+										</div>
+										<div class="line">
+
+											<input type="checkbox" name="raz5" id="raz_3_5">
+											<label for="raz_3_5">1280x720</label>
+											<input type="checkbox" name="raz5" id="raz_4_5">
+											<label for="raz_4_5">960x540</label>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<h2 onclick="toogle1('#cont_9',9);">Количество SIM-карт<img id="up9" src="img/menu-arrow.png" alt=""></i>
+									</h2>
+									<div class="cont" id="cont_9">
+										<div class="line">
+											<input type="checkbox" name="raz6" id="raz_1_6">
+											<label for="raz_1_6">2040x1080</label>
+											<input type="checkbox" name="raz6" id="raz_2_6">
+											<label for="raz_2_6">1920х1080</label>
+										</div>
+										<div class="line">
+
+											<input type="checkbox" name="raz6" id="raz_3_6">
+											<label for="raz_3_6">1280x720</label>
+											<input type="checkbox" name="raz6" id="raz_4_6">
+											<label for="raz_4_6">960x540</label>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<h2 onclick="toogle1('#cont_10',10);">Цвет <img id="up10" src="img/menu-arrow.png" alt="">
+									</h2>
+									<div class="cont" id="cont_10">
+										<div class="line">
+											<input type="checkbox" name="raz7" id="raz_1_7">
+											<label for="raz_1_7">2040x1080</label>
+											<input type="checkbox" name="raz7" id="raz_2_7">
+											<label for="raz_2_7">1920х1080</label>
+										</div>
+										<div class="line">
+
+											<input type="checkbox" name="raz7" id="raz_3_7">
+											<label for="raz_3_7">1280x720</label>
+											<input type="checkbox" name="raz7" id="raz_4_7">
+											<label for="raz_4_7">960x540</label>
+										</div>
+									</div>
+								</div>
+								<div class="item buttons">
+									<button class="my-3">Найти</button>
+									<a href="#">Очистить фильтр</a>
+								</div>
+							</div>
+							<div class="all">
+								<p>Сортировать:</p>
+								<select name="sort" id="">
+									<option value="1" selected>По названию</option>
+									<option value="2">По возрастанию цены</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
 						</div>
-						<div class="buy "><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
+
+						<div class="item hit col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1item.html"><img src="img/xiaiomi_redmi_note_6.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1item.html">
+										<h4>Xiaomi Redmi Note 6 Pro 4Gb+64Gb (Черный) Global Version</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color" id="color_1" checked>
+										<label for="color_1"></label>
+										<input type="radio" name="color" id="color_2">
+										<label for="color_2"></label>
+										<input type="radio" name="color" id="color_3">
+										<label for="color_3"></label>
+										<input type="radio" name="color" id="color_4">
+										<label for="color_4"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em" id="em_1" checked>
+										<label for="em_1">64 Gb</label>
+										<input type="radio" name="em" id="em_2">
+										<label for="em_2">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy "><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+						<div class="item free col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1item.html"><img src="img/apple_Iphone_x.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1item.html">
+										<h4>Apple iPhone X 64Gb A1901
+											(Cерый космос)</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color1" id="color_1_1" checked>
+										<label for="color_1_1"></label>
+										<input type="radio" name="color1" id="color_2_1">
+										<label for="color_2_1"></label>
+										<input type="radio" name="color1" id="color_3_1">
+										<label for="color_3_1"></label>
+										<input type="radio" name="color1" id="color_4_1">
+										<label for="color_4_1"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em1" id="em_1_1" checked>
+										<label for="em_1_1">64 Gb</label>
+										<input type="radio" name="em1" id="em_2_1">
+										<label for="em_2_1">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+						<div class="item col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1i"><img src="img/iphone_xa.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1i">
+										<h4>Apple iPhone XS Max 64GB (золотистый)</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color2" id="color_1_2" checked>
+										<label for="color_1_2"></label>
+										<input type="radio" name="color2" id="color_2_2">
+										<label for="color_2_2"></label>
+										<input type="radio" name="color2" id="color_3_2">
+										<label for="color_3_2"></label>
+										<input type="radio" name="color2" id="color_4_2">
+										<label for="color_4_2"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em2" id="em_1_2" checked>
+										<label for="em_1_2">64 Gb</label>
+										<input type="radio" name="em2" id="em_2_2">
+										<label for="em_2_2">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+
+
+
+						<div class="item col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1item.html"><img src="img/redmi_a5.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1item.html">
+										<h4>Xiaomi Redmi 5A 2Gb+16Gb
+											(Серый)</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color3" id="color_1_3" checked>
+										<label for="color_1_3"></label>
+										<input type="radio" name="color3" id="color_2_3">
+										<label for="color_2_3"></label>
+										<input type="radio" name="color3" id="color_3_3">
+										<label for="color_3_3"></label>
+										<input type="radio" name="color3" id="color_4_3">
+										<label for="color_4_3"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em3" id="em_1_3" checked>
+										<label for="em_1_3">64 Gb</label>
+										<input type="radio" name="em3" id="em_2_3">
+										<label for="em_2_3">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+						<div class="item col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1item.html"><img src="img/redmi_5.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1item.html">
+										<h4>Xiaomi Redmi Note 5 3Gb+32Gb
+											(Розовый)</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color4" id="color_1_4" checked>
+										<label for="color_1_4"></label>
+										<input type="radio" name="color4" id="color_2_4">
+										<label for="color_2_4"></label>
+										<input type="radio" name="color4" id="color_3_4">
+										<label for="color_3_4"></label>
+										<input type="radio" name="color4" id="color_4_4">
+										<label for="color_4_4"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em4" id="em_1_4" checked>
+										<label for="em_1_4">64 Gb</label>
+										<input type="radio" name="em4" id="em_2_4">
+										<label for="em_2_4">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+						<div class="item col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1item.html"><img src="img/mi_a2.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1item.html">
+										<h4>Телефон Xiaomi Mi A2 Lite 4gb+64Gb (Черный) Global Version</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color5" id="color_1_5" checked>
+										<label for="color_1_5"></label>
+										<input type="radio" name="color5" id="color_2_5">
+										<label for="color_2_5"></label>
+										<input type="radio" name="color5" id="color_3_5">
+										<label for="color_3_5"></label>
+										<input type="radio" name="color5" id="color_4_5">
+										<label for="color_4_5"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em5" id="em_1_5" checked>
+										<label for="em_1_5">64 Gb</label>
+										<input type="radio" name="em5" id="em_2_5">
+										<label for="em_2_5">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+						<div class="item col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1item.html"><img src="img/iphone_7.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1item.html">
+										<h4>Apple iPhone 7 128Gb
+											A1778 (Gold)</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color6" id="color_1_6" checked>
+										<label for="color_1_6"></label>
+										<input type="radio" name="color6" id="color_2_6">
+										<label for="color_2_6"></label>
+										<input type="radio" name="color6" id="color_3_6">
+										<label for="color_3_6"></label>
+										<input type="radio" name="color6" id="color_4_6">
+										<label for="color_4_6"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em6" id="em_1_6" checked>
+										<label for="em_1_6">64 Gb</label>
+										<input type="radio" name="em6" id="em_2_6">
+										<label for="em_2_6">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+						<div class="item col-lg-4 col-md-4 col-6">
+							<div class="content">
+								<a href="1item.html"><img src="img/iphone_xr.jpg" alt=""></a>
+								<div class="des">
+									<p class="d-none d-md-block">Мобильный телефон</p>
+									<a href="1item.html">
+										<h4>Apple iPhone XR 64Gb
+											(Yellow)</h4>
+									</a>
+								</div>
+								<div class="buttons">
+									<div class="color">
+										<input type="radio" name="color7" id="color_1_7" checked>
+										<label for="color_1_7"></label>
+										<input type="radio" name="color7" id="color_2_7">
+										<label for="color_2_7"></label>
+										<input type="radio" name="color7" id="color_3_7">
+										<label for="color_3_7"></label>
+										<input type="radio" name="color7" id="color_4_7">
+										<label for="color_4_7"></label>
+									</div>
+									<div class="em">
+										<input type="radio" name="em7" id="em_1_7" checked>
+										<label for="em_1_7">64 Gb</label>
+										<input type="radio" name="em7" id="em_2_7">
+										<label for="em_2_7">128 Gb</label>
+									</div>
+								</div>
+								<div class="cena">
+									<div class="cen">
+										<h3>13 560 </h3>
+										<p>руб.</p>
+									</div>
+									<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
+
+								</div>
+								<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
+											Купить</span></button><a href="№" class="d-none d-md-block">Купить
+										в
+										1
+										клик</a></div>
+							</div>
+						</div>
+						<div class="navig col-12 d-flex justify-content-center">
+							<ul class="d-flex">
+								<li><a href="#"><img src="img/menu-arrow.png" style="transform: rotate(-90deg)" alt=""></a> </li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li class="active"><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#"><img src="img/menu-arrow.png" style="transform: rotate(90deg)" alt=""></a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="item free col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1item.html"><img src="img/apple_Iphone_x.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1item.html">
-								<h4>Apple iPhone X 64Gb A1901
-									(Cерый космос)</h4>
-							</a>
-						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color1" id="color_1_1" checked>
-								<label for="color_1_1"></label>
-								<input type="radio" name="color1" id="color_2_1">
-								<label for="color_2_1"></label>
-								<input type="radio" name="color1" id="color_3_1">
-								<label for="color_3_1"></label>
-								<input type="radio" name="color1" id="color_4_1">
-								<label for="color_4_1"></label>
-							</div>
-							<div class="em">
-								<input type="radio" name="em1" id="em_1_1" checked>
-								<label for="em_1_1">64 Gb</label>
-								<input type="radio" name="em1" id="em_2_1">
-								<label for="em_2_1">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
-
-						</div>
-						<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
-					</div>
-				</div>
-				<div class="item col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1i"><img src="img/iphone_xa.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1i">
-								<h4>Apple iPhone XS Max 64GB (золотистый)</h4>
-							</a>
-						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color2" id="color_1_2" checked>
-								<label for="color_1_2"></label>
-								<input type="radio" name="color2" id="color_2_2">
-								<label for="color_2_2"></label>
-								<input type="radio" name="color2" id="color_3_2">
-								<label for="color_3_2"></label>
-								<input type="radio" name="color2" id="color_4_2">
-								<label for="color_4_2"></label>
-							</div>
-							<div class="em">
-								<input type="radio" name="em2" id="em_1_2" checked>
-								<label for="em_1_2">64 Gb</label>
-								<input type="radio" name="em2" id="em_2_2">
-								<label for="em_2_2">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
-
-						</div>
-						<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
-					</div>
-				</div>
-				<div class="menu d-none d-lg-block col-lg-3 col-12"></div>
-
-				<div class="item col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1item.html"><img src="img/redmi_a5.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1item.html">
-								<h4>Xiaomi Redmi 5A 2Gb+16Gb
-									(Серый)</h4>
-							</a>
-						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color3" id="color_1_3" checked>
-								<label for="color_1_3"></label>
-								<input type="radio" name="color3" id="color_2_3">
-								<label for="color_2_3"></label>
-								<input type="radio" name="color3" id="color_3_3">
-								<label for="color_3_3"></label>
-								<input type="radio" name="color3" id="color_4_3">
-								<label for="color_4_3"></label>
-							</div>
-							<div class="em">
-								<input type="radio" name="em3" id="em_1_3" checked>
-								<label for="em_1_3">64 Gb</label>
-								<input type="radio" name="em3" id="em_2_3">
-								<label for="em_2_3">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
-
-						</div>
-						<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
-					</div>
-				</div>
-				<div class="item col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1item.html"><img src="img/redmi_5.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1item.html">
-								<h4>Xiaomi Redmi Note 5 3Gb+32Gb
-									(Розовый)</h4>
-							</a>
-						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color4" id="color_1_4" checked>
-								<label for="color_1_4"></label>
-								<input type="radio" name="color4" id="color_2_4">
-								<label for="color_2_4"></label>
-								<input type="radio" name="color4" id="color_3_4">
-								<label for="color_3_4"></label>
-								<input type="radio" name="color4" id="color_4_4">
-								<label for="color_4_4"></label>
-							</div>
-							<div class="em">
-								<input type="radio" name="em4" id="em_1_4" checked>
-								<label for="em_1_4">64 Gb</label>
-								<input type="radio" name="em4" id="em_2_4">
-								<label for="em_2_4">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
-
-						</div>
-						<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
-					</div>
-				</div>
-				<div class="item col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1item.html"><img src="img/mi_a2.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1item.html">
-								<h4>Телефон Xiaomi Mi A2 Lite 4gb+64Gb (Черный) Global Version</h4>
-							</a>
-						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color5" id="color_1_5" checked>
-								<label for="color_1_5"></label>
-								<input type="radio" name="color5" id="color_2_5">
-								<label for="color_2_5"></label>
-								<input type="radio" name="color5" id="color_3_5">
-								<label for="color_3_5"></label>
-								<input type="radio" name="color5" id="color_4_5">
-								<label for="color_4_5"></label>
-							</div>
-							<div class="em">
-								<input type="radio" name="em5" id="em_1_5" checked>
-								<label for="em_1_5">64 Gb</label>
-								<input type="radio" name="em5" id="em_2_5">
-								<label for="em_2_5">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
-
-						</div>
-						<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
-					</div>
-				</div>
-				<div class="menu d-none d-lg-block col-lg-3 col-12"></div>
-				<div class="item col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1item.html"><img src="img/iphone_7.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1item.html">
-								<h4>Apple iPhone 7 128Gb
-									A1778 (Gold)</h4>
-							</a>
-						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color6" id="color_1_6" checked>
-								<label for="color_1_6"></label>
-								<input type="radio" name="color6" id="color_2_6">
-								<label for="color_2_6"></label>
-								<input type="radio" name="color6" id="color_3_6">
-								<label for="color_3_6"></label>
-								<input type="radio" name="color6" id="color_4_6">
-								<label for="color_4_6"></label>
-							</div>
-							<div class="em">
-								<input type="radio" name="em6" id="em_1_6" checked>
-								<label for="em_1_6">64 Gb</label>
-								<input type="radio" name="em6" id="em_2_6">
-								<label for="em_2_6">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
-
-						</div>
-						<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
-					</div>
-				</div>
-				<div class="item col-lg-3 col-md-4 col-6">
-					<div class="content">
-						<a href="1item.html"><img src="img/iphone_xr.jpg" alt=""></a>
-						<div class="des">
-							<p>Мобильный телефон</p>
-							<a href="1item.html">
-								<h4>Apple iPhone XR 64Gb
-									(Yellow)</h4>
-							</a>
-						</div>
-						<div class="buttons d-none d-md-block">
-							<div class="color">
-								<input type="radio" name="color7" id="color_1_7" checked>
-								<label for="color_1_7"></label>
-								<input type="radio" name="color7" id="color_2_7">
-								<label for="color_2_7"></label>
-								<input type="radio" name="color7" id="color_3_7">
-								<label for="color_3_7"></label>
-								<input type="radio" name="color7" id="color_4_7">
-								<label for="color_4_7"></label>
-							</div>
-							<div class="em">
-								<input type="radio" name="em7" id="em_1_7" checked>
-								<label for="em_1_7">64 Gb</label>
-								<input type="radio" name="em7" id="em_2_7">
-								<label for="em_2_7">128 Gb</label>
-							</div>
-						</div>
-						<div class="cena">
-							<div class="cen">
-								<h3>13 560 </h3>
-								<p>руб.</p>
-							</div>
-							<span class="d-none d-md-block"><strong>17 500</strong> руб.</span>
-
-						</div>
-						<div class="buy"><button><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="d-none d-md-block">
-									Купить</span></button><a href="№" class="d-none d-md-block">Купить
-								в
-								1
-								клик</a></div>
-					</div>
-				</div>
-				<div class="navig col-12 d-flex justify-content-center">
-					<ul class="d-flex">
-						<li><a href="#"> <i class="fa fa-arrow-left" aria-hidden="true"></i></a> </li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li class="active"><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">6</a></li>
-						<li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-					</ul>
 				</div>
 			</div>
-
 		</div>
 	</div>
 	<footer class="mt-5">
 		<div class="container">
 			<div class="row justify-content-between ">
-				<div class="info col-lg-2 col-md-4 col-12 navbar navbar-expand-md justify-content-center  justify-content-center flex-lg-column align-items-start">
+				<div class="info col-lg-3 col-md-3 col-12 navbar navbar-expand-md justify-content-center flex-lg-column align-items-start justify-content-md-start">
 
 					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-1" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
@@ -687,29 +806,25 @@
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-1">
 						<div class="navbar-nav flex-column align-items-center align-items-md-start">
 							<li><a href="#">О магазине</a></li>
-							<li><a href="#">Сертификаты</a></li>
-							<li><a href="#">Реквизиты</a></li>
-							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Контакты</a></li>
 						</div>
 					</ul>
 				</div>
-				<div class="pok col-lg-3 col-md-4 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start">
+				<div class="pok col-lg-3 col-md-3 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start justify-content-md-start">
 					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-2" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
 						Покупателю
 					</h4>
 					<h4 class="d-none d-md-block">Покупателю</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-2">
-						<div class="navbar-nav  mr-auto flex-column align-content-center align-items-md-start">
-							<li><a href="#">Акции и подарки</a></li>
-							<li><a href="#">Нашли дешевле?</a></li>
-							<li><a href="#">Обработка персональных данных</a></li>
-							<li><a href="#">Партнерская программа</a></li>
+						<div class="navbar-nav flex-column align-items-center align-items-md-start">
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Гарантия</a></li>
 						</div>
 
 					</ul>
 				</div>
-				<div class="help col-lg-2 col-md-4 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start">
+				<div class="help col-lg-2 col-md-3 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start justify-content-md-start">
 					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-3" aria-controls="navbarSupportedContent"
 					 aria-expanded="false" aria-label="Toggle navigation">
 						Помощь
@@ -717,44 +832,13 @@
 					<h4 class="d-none d-md-block">Помощь</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-3">
 						<div class="navbar-nav flex-column align-items-center align-items-md-start">
-							<li><a href="#">Как сделать заказ</a></li>
-							<li><a href="#">Условия доставки</a></li>
-							<li><a href="#">Адрес магазина</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
 						</div>
 
 					</ul>
 				</div>
-				<div class="social col-lg-2 col-md-4 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start ">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-4" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">Мы
-						в соцсетях </h4>
-					<h4 class="d-none d-md-block">Мы в соцсетях</h4>
-					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-4">
-						<div class="navbar-nav flex-column align-items-center align-items-md-start">
-							<li><a href="#">
-									<div class="img"><img src="img/vk.png" alt="icon_social"></div> Вконтакте
-								</a></li>
-							<li><a href="#">
-									<div class="img"><img src="img/f.png" alt="icon_social"></div> Facebook
-								</a></li>
-							<li><a href="#">
-									<div class="img"> <img src="img/insta.png" alt="icon_social"></div>Instagram
-								</a></li>
-							<li><a href="#">
-									<div class="img"><img src="img/tw.png" alt="icon_social"></div> Твитер
-								</a></li>
-							<li><a href="#">
-									<div class="img"><img src="img/od.png" alt="icon_social"></div>
-									Одноклассники
-								</a></li>
-						</div>
-					</ul>
-				</div>
-				<div class="contact col-lg-3 col-md-8 col-12 navbar navbar-expand-md justify-content-center  flex-lg-column align-items-start ">
-					<h4 class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-f-5" aria-controls="navbarSupportedContent"
-					 aria-expanded="false" aria-label="Toggle navigation">
-						Контакты
-					</h4>
+				<div class="contact col-lg-4 col-md-3 col-12 flex-column navbar navbar-expand justify-content-center  flex-lg-column align-items-start ">
+
 					<h4 class="d-none d-md-block">Контакты</h4>
 					<ul class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent-f-5">
 						<div class="navbar-nav flex-column align-items-center align-items-md-start">
@@ -765,7 +849,7 @@
 							</li>
 							<li>Звонки по РФ
 								<a href="8 (800) 946 10 20">8 (800) 946 10 20 </a></li>
-							<li>E-mail: <a href="#"> yellow@store.ru</a> </li>
+							<li class="d-none d-md-block">E-mail: <a href="#"> yellow@store.ru</a> </li>
 						</div>
 
 					</ul>
@@ -785,20 +869,22 @@
 	</footer>
 	<script src="js/libs.min.js"></script>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-	 crossorigin="anonymous"></script>
-	<script src="https://www.cssscript.com/demo/animated-customizable-range-slider-pure-javascript-rslider-js/js/rSlider.min.js"></script>
 	<script src="js/jquery.nice-select.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 	<script>
 		function toogle1(blockid, id) {
 			var value = 'matrix(-1, -1.22465e-16, 1.22465e-16, -1, 0, 0)';
 			$(blockid).slideToggle();
 			console.log($('#up' + id).css('transform'));
-			value = $('#up' + id).css('transform') === value ? '0)' : '-180deg)'
-			$('#up' + id).css('transform', 'rotate(' + value);
-
-
+			if ($('#up' + id).css('transform') == 'none') {
+				$('#up' + id).css({
+					'transform': 'rotate(-180deg)'
+				})
+			} else {
+				$('#up' + id).css({
+					'transform': 'none'
+				})
+			}
 		}
 		$('.navbar-toggler').on('click', function () {
 			$(this).toggleClass('up')
@@ -808,32 +894,17 @@
 
 		});
 
+
+
 		function toogle() {
 			$('#menu-dropdown').slideToggle();
 		}
 
 		function toogle2() {
-			$('#filter').toggleClass('d-none');
+			$('#filterbutt').toggleClass('open');
+			$('#filter1').slideToggle();
 		}
-		(function () {
-			'use strict';
-			var init = function () {
-				var slider2 = new rSlider({
-					target: '#time_range',
-					values: [8, 8.3, 9, 9.3, 10, 10.3, 11, 11.3, 12, 12.3, 13, 13.3, 14, 14.3, 15, 15.3, 16, 16.3, 17, 17.3, 18,
-						18.3, 19
-					],
-					step: 1,
-					range: true,
-
-					tooltip: true,
-					scale: true,
-					labels: true,
-					width: null,
-				});
-			};
-			window.onload = init;
-		})();
+		$(".js-range-slider").ionRangeSlider();
 	</script>
 </body>
 
