@@ -719,6 +719,19 @@
     height: 600px;
   }
 
+  .catalog_items .buy a {
+    width: 70px;
+    margin-top: 5px;
+  }
+
+  .catalog_items .buy {
+    flex-wrap: wrap;
+  }
+
+  .catalog_items .cena {
+    flex-wrap: wrap;
+  }
+
   #slick .slick-track,
   #slick,
   #slick .slick-list {
