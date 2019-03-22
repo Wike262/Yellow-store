@@ -837,6 +837,10 @@
         border: 3px solid #ffc501 !important;
     }
 
+    .description+.nav {
+        flex-wrap: nowrap;
+    }
+
     #slick1 .slick-prev,
     #slick1 .slick-next {
         background: url('../img/arrow-down.png');

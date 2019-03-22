@@ -167,7 +167,13 @@ table .summ,
 }
 
 .close button {
-    margin-top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close_mb button {
+    margin-top: 20px;
     background: none;
     border: none;
     cursor: pointer;
@@ -269,6 +275,11 @@ table .summ,
 }
 
 .bask .item .close img {
+    height: 20px;
+    width: 20px;
+}
+
+.bask .item .close_mb img {
     height: 20px;
     width: 20px;
 }
@@ -457,7 +468,7 @@ table .summ,
     .slick-dots {
         bottom: auto !important;
         top: -30px !important;
-        left: 50px !important;
+        left: 5px !important;
         width: fit-content !important;
 
     }

@@ -209,7 +209,6 @@
 
 .catalog_items .title .radio h2 {
   text-transform: uppercase;
-  margin-right: 25px;
 }
 
 .catalog_items .title .radio input {
@@ -749,7 +748,7 @@
   .slick-dots {
     bottom: auto;
     top: -30px;
-    left: 50px;
+    left: 45px;
     width: fit-content;
 
   }

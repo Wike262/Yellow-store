@@ -449,6 +449,14 @@ ul {
         flex-wrap: wrap;
     }
 
+    #catalog {
+        width: auto;
+    }
+
+    .nice-select {
+        width: 190px;
+    }
+
     .catalog_items .hit::after {
         padding: 5px 10px !important;
         right: 20px !important;
