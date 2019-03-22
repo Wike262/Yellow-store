@@ -11,7 +11,9 @@
 *:active {
   outline: none;
 }
-
+body {
+  overflow-x: hidden;
+}
 button:focus {
   outline: none;
 }
